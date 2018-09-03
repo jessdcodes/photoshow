@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
   </head>
   <body>
-    <div class="row">
+    @include('inc.topbar')
+    <br>
+    <div class="row" style="margin-left: 20px;">
+      @include('inc.messages')
       @yield('content')
     </div>
   </body>
