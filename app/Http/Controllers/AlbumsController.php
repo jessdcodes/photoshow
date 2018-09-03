@@ -15,6 +15,11 @@ class AlbumsController extends Controller
       return view('albums.create');
     }
 
+    public function show($id){
+      $album = Album::with('Photos')->find($id);
+      return view('albums.show')->with('album',$album);
+    }
+
     public function store(Request $request){
       $this->validate($request,[
         'name' => 'required',
