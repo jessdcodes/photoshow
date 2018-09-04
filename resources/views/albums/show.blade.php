@@ -2,7 +2,7 @@
 
 @section('content')
   <h1>{{$album->name}}</h1>
-  <a class="button secondary" href="/">Go Back</a>
+  <a class="button secondary" href="/photoshow/public/albums">Go Back</a>
   <a class="button" href="/photoshow/public/photos/create/{{$album->id}}">Upload Photo to Album</a>
   <hr>
 
